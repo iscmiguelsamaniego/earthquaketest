@@ -16,8 +16,6 @@ import android.widget.TextView;
 import org.joda.time.DateTime;
 import org.samtech.earthquaketest.activities.EarthQuakeDetailActivity;
 import org.samtech.earthquaketest.activities.EarthQuakesListActivity;
-import org.samtech.earthquaketest.models.EarthQuakeProperties;
-import org.samtech.earthquaketest.models.Note;
 import org.samtech.earthquaketest.models.helpers.DatabaseHelper;
 import org.samtech.earthquaketest.utils.Connection;
 import org.samtech.earthquaketest.utils.DateFormatUtil;
