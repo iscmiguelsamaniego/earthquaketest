@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/gen_dimen_16"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/act_main">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gen_dimen_16"
+        android:gravity="center"
+        android:text="@string/find_earthquake"
+        android:textSize="@dimen/gen_dimen_24"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="@string/select_magnitude"
+        android:textSize="@dimen/gen_dimen_14"
+        tools:ignore="RtlHardcoded" />
+
+    <SeekBar
+        android:id="@+id/form_sbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gen_dimen_8"
+        android:max="100"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/form_sbar_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/gen_dimen_8"
+        android:gravity="center"
+        android:text="@string/start_value_magnitude"
+        android:textSize="@dimen/gen_dimen_16" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_marginBottom="@dimen/gen_dimen_8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/form_startTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="@string/start_time"
+            android:inputType="date"
+            android:padding="12dp"
+            android:text="@string/lbl_date_format" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/gen_dimen_8"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/form_endTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"
+            android:hint="@string/end_time"
+            android:inputType="date"
+            android:padding="12dp"
+            android:text="@string/lbl_date_format" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/form_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gen_dimen_16"
+        android:background="@color/colorPrimary"
+        android:text="@string/query"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/form_query_all_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gen_dimen_16"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/query_all"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/form_show_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/gen_dimen_16"
+        android:background="@color/colorAccent"
+        android:text="Mostrar detalle"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+</LinearLayout>
